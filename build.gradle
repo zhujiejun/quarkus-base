@@ -9,16 +9,16 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.quarkus:quarkus-cache'
-    implementation 'org.apache.camel.quarkus:camel-quarkus-bean'
-    implementation 'io.quarkus:quarkus-logging-json'
-    implementation 'io.quarkus:quarkus-jackson'
-    implementation 'io.quarkus:quarkus-config-yaml'
     implementation 'io.quarkus:quarkus-scala'
+    implementation 'io.quarkus:quarkus-cache'
+    implementation 'io.quarkus:quarkus-jackson'
+    implementation 'io.quarkus:quarkus-resteasy'
+    implementation 'io.quarkus:quarkus-config-yaml'
+    implementation 'io.quarkus:quarkus-logging-json'
+    implementation 'org.scala-lang:scala-library:2.12.8'
+    implementation 'org.apache.camel.quarkus:camel-quarkus-bean'
     implementation 'org.apache.camel.quarkus:camel-quarkus-base64'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
-    implementation 'org.scala-lang:scala-library:2.12.8'
-    implementation 'io.quarkus:quarkus-resteasy'
 
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
