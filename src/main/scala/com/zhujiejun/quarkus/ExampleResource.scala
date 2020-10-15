@@ -1,7 +1,7 @@
 package com.zhujiejun.quarkus
 
-import javax.ws.rs.{GET, Path, Produces}
 import javax.ws.rs.core.MediaType
+import javax.ws.rs.{GET, Path, Produces}
 
 @Path("/hello")
 class ExampleResource {
