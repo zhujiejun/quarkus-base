@@ -15,6 +15,7 @@ dependencies {
     implementation 'io.quarkus:quarkus-resteasy'
     implementation 'io.quarkus:quarkus-config-yaml'
     implementation 'io.quarkus:quarkus-logging-json'
+    implementation 'io.quarkus:quarkus-kafka-client'
     implementation 'org.scala-lang:scala-library:2.12.8'
     implementation 'org.apache.camel.quarkus:camel-quarkus-bean'
     implementation 'org.apache.camel.quarkus:camel-quarkus-base64'
