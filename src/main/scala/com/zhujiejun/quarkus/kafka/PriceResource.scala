@@ -7,16 +7,16 @@ import org.eclipse.microprofile.reactive.messaging.Channel
 import org.jboss.resteasy.annotations.SseElementType
 import org.reactivestreams.Publisher
 
-@Path("/price")
+@Path("/prices")
 class PriceResource {
     @Inject
     @Channel("my-data-stream")
-    var prices: Publisher[Double] = null
+    var prices: Publisher[Double] = _
 
     @GET
     @Path("/stream")
-    @Produces(MediaType.SERVER_SENT_EVENTS)
     @SseElementType("text/plain")
+    @Produces(Array[String](MediaType.SERVER_SENT_EVENTS))
     def stream(): Publisher[Double] = {
         prices
     }
