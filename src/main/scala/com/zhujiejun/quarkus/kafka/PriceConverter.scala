@@ -9,7 +9,7 @@ class PriceConverter {
     private val CONVERSION_RATE: Double = 0.88
 
     @Broadcast
-    @Incoming("price")
+    @Incoming("generated-price-topic")
     @Outgoing("my-data-stream")
     def process(priceInUsd: Int): Double = {
         priceInUsd * CONVERSION_RATE
