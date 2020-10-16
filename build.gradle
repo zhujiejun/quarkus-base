@@ -16,9 +16,12 @@ dependencies {
     implementation 'io.quarkus:quarkus-config-yaml'
     implementation 'io.quarkus:quarkus-logging-json'
     implementation 'io.quarkus:quarkus-kafka-client'
-    implementation 'org.scala-lang:scala-library:2.12.8'
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.7'
+    implementation 'org.scala-lang:scala-library:2.13.2'
     implementation 'org.apache.camel.quarkus:camel-quarkus-bean'
     implementation 'org.apache.camel.quarkus:camel-quarkus-base64'
+    implementation 'io.smallrye.reactive:smallrye-reactive-messaging-api:2.4.0'
+    implementation 'org.eclipse.microprofile.reactive.messaging:microprofile-reactive-messaging-api:1.0'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
 
     testImplementation 'io.quarkus:quarkus-junit5'
