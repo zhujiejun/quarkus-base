@@ -13,6 +13,6 @@ class PriceGenerator {
 
     @Outgoing("generated-price")
     def generate(): Flowable[Int] = {
-        Flowable.interval(5, TimeUnit.SECONDS).map(_ => RANDOM.nextInt(100))
+        Flowable.interval(60, TimeUnit.SECONDS).map(_ => RANDOM.nextInt(100))
     }
 }

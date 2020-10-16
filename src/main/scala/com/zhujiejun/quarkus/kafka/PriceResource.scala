@@ -1,6 +1,5 @@
 package com.zhujiejun.quarkus.kafka
 
-import javax.inject.Inject
 import javax.ws.rs.core.MediaType
 import javax.ws.rs.{GET, Path, Produces}
 import org.eclipse.microprofile.reactive.messaging.Channel
@@ -9,7 +8,7 @@ import org.reactivestreams.Publisher
 
 @Path("/prices")
 class PriceResource {
-    @Inject
+    //@Inject
     @Channel("my-data-stream")
     var prices: Publisher[Double] = _
 
